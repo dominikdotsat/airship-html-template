@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Onefootball Button Survey Template</title>
+	<style>
+		html,body {
+			width: 100%;
+			height: 100%;
+		}
+		body {
+			padding: 25px; 
+		    margin: 0px;
+		    width: 100%;
+		    text-align: center;
+		    font-size: 1.2em;
+		    font-family: sans-serif;
+		    box-sizing: border-box;
+		    display: flex;
+		    flex-direction: column;
+			justify-content: space-between;
+		}
+		#visual {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		p {
+			padding: 20px;
+		}
+		button {
+			width: 100%;
+			appearance: none;
+			-webkit-appearance: none;
+			border: 0;
+			box-shadow: none;
+			background-color: #30b846;
+			color: #fff;
+			padding: 15px;
+			font-size: 1em;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+	</style>
+	<script>
+		function onUAReady() {
+			var deviceID =  UAirship.getUserId();
+			var surveyButton = document.getElementById('surveyButton');
+		        surveyButton.disabled = false;
+		        surveyButton.addEventListener('click', function()  {
+		            location.href =  "https://www.surveymonkey.de/r/airshipproofofconcept?Device_ID="+deviceID;
+		    	});
+		}
+		document.addEventListener('ualibraryready', onUAReady, false);
+	</script>
+</head>
+<body>
+	<img src="https://motain-images.s3-eu-west-1.amazonaws.com/survey-img.png" alt="" id="visual" data-ua-image="visual">
+	<p id="mainText" data-ua-text="main-text">
+		Please help us make Onefootball even better. For that, we have a few questions. It will only take 6 minutes. We promise ;)
+	</p>
+	<button id="surveyButton" data-ua-text="survey-button" disabled>Let’s do it!</button>
+</body>
+</html>
