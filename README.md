@@ -32,7 +32,7 @@ Please keep in mind this is a *proof of concept* as this will be functional to e
 
 ## Images ##
 
-![Alt Visual IN-APP message](visual.png?raw=true "Visual IN-APP message")
+![Alt Visual IN-APP message](visual1.png?raw=true "Visual IN-APP message")
 
 
 ## Changelog ##
