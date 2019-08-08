@@ -1,5 +1,6 @@
 # Airship HTML template #
 **Contributors:**      @dominikdotsat  
+**Ticket:**			   https://onefootball.atlassian.net/browse/US-473
 **Tags:**  
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html  
@@ -25,11 +26,13 @@ Using Costum HTML option to pass variables and design the in-app message includi
 Please keep in mind this is a *proof of concept* as this will be functional to enrich our data WH and future DMP. Therefore i set priority to minor as this should not be a blocker for your epics. 
 
 ## More ##
-https://docs.airship.com/reference/custom-templates/
-https://docs.airship.com/tutorials/orchestration/in-app-automation/in-app-automation/
-https://go.urbanairship.com/
+* https://docs.airship.com/reference/custom-templates/
+* https://docs.airship.com/tutorials/orchestration/in-app-automation/in-app-automation/
+* https://go.urbanairship.com/
 
-## Screenshots ##
+## Images ##
+
+![Alt Visual IN-APP message](visual.png?raw=true "Visual IN-APP message")
 
 
 ## Changelog ##
