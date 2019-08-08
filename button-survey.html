@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Onefootball Button Survey Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		html,body {
 			width: 100%;
@@ -44,12 +45,16 @@
 	</style>
 	<script>
 		function onUAReady() {
-			var deviceID =  UAirship.getUserId();
+			var deviceID =  UAirship.getNamedUser();
 			var surveyButton = document.getElementById('surveyButton');
 		        surveyButton.disabled = false;
-		        surveyButton.addEventListener('click', function()  {
-		            location.href =  "https://www.surveymonkey.de/r/airshipproofofconcept?Device_ID="+deviceID;
-		    	});
+		     //    surveyButton.addEventListener('click', function()  {
+		     //        location.href =  "https://www.surveymonkey.de/r/airshipproofofconcept?Device_ID="+deviceID;
+		    	// });
+		    var surverUrl = "https://www.surveymonkey.de/r/airshipproofofconcept"; //survey url, without pars
+		    	surveyButton.addEventListener('click', function()  {
+		            UAirship.runAction("deep_link_action", "onefootball://external?url="+encodeURI(surverUrl+"?Device_ID="+deviceID), function() {return true})
+		        })
 		}
 		document.addEventListener('ualibraryready', onUAReady, false);
 	</script>
