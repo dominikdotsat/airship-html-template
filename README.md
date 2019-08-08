@@ -1,6 +1,6 @@
 # Airship HTML template #
 **Contributors:**      @dominikdotsat  
-**Ticket:**			   https://onefootball.atlassian.net/browse/US-473
+**Ticket:**			   https://onefootball.atlassian.net/browse/US-473 
 **Tags:**  
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html  
