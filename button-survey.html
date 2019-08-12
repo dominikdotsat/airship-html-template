@@ -8,6 +8,9 @@
 		html,body {
 			width: 100%;
 			height: 100%;
+			box-sizing: border-box;
+			position: relative;
+			display: block;
 		}
 		body {
 			padding: 25px; 
@@ -53,7 +56,8 @@
 		    	// });
 		    var surverUrl = "https://www.surveymonkey.de/r/airshipproofofconcept"; //survey url, without pars
 		    	surveyButton.addEventListener('click', function()  {
-		            UAirship.runAction("deep_link_action", "onefootball://external?url="+encodeURI(surverUrl+"?Device_ID="+deviceID), function() {return true})
+		    		UAirship.close();
+		            UAirship.runAction("deep_link_action", "onefootball://external?url="+encodeURI(surverUrl+"?Device_ID="+deviceID), function() {return true});
 		        })
 		}
 		document.addEventListener('ualibraryready', onUAReady, false);
