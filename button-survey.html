@@ -31,6 +31,8 @@
 		}
 		p {
 			padding: 20px;
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 		button {
 			width: 100%;
@@ -51,9 +53,6 @@
 			var deviceID =  UAirship.getNamedUser();
 			var surveyButton = document.getElementById('surveyButton');
 		        surveyButton.disabled = false;
-		     //    surveyButton.addEventListener('click', function()  {
-		     //        location.href =  "https://www.surveymonkey.de/r/airshipproofofconcept?Device_ID="+deviceID;
-		    	// });
 		    var surverUrl = "https://www.surveymonkey.de/r/airshipproofofconcept"; //survey url, without pars
 		    	surveyButton.addEventListener('click', function()  {
 		    		UAirship.close();
